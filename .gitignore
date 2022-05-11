@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# articles downloaded
+crawler/articles/
+
+#IDE stuff
+*.idea
+
 # C extensions
 *.so
 
@@ -67,6 +73,7 @@ instance/
 
 # Scrapy stuff:
 .scrapy
+*.jl
 
 # Sphinx documentation
 docs/_build/
