@@ -49,8 +49,8 @@ class BloombergCrawler(CrawlSpider):
         response = Selector(response=response)
         article['title'] = response.xpath('//title/text()').get()
 
-        article['date'] = response.xpath('.//span[@class="posted-on"]//text()').get()  # '9 lipca 2020'
-        article['author'] = response.xpath('.//a[@class="url fn n"]//text()').get()  # "Kamil Kwapisz"
+        article['date'] = response.xpath('.//span[@class="posted-on"]//text()').get()
+        article['author'] = response.xpath('.//a[@class="url fn n"]//text()').get()
         article['tags'] = response.xpath(
             './/meta[@property="article:tag"]//@content').getall()
         article_text = response.xpath('.//p//text()').getall()

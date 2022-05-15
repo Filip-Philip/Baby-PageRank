@@ -9,6 +9,10 @@ crawler/articles/
 #IDE stuff
 *.idea
 
+# saved arrays and matrices
+*.npy
+*.npz
+
 # C extensions
 *.so
 
